@@ -1,0 +1,374 @@
+*{
+    margin: auto 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'RussoOne';
+    src: url("../fonts/RussoOne-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'OpenSans-Light';
+    src: url("../fonts/OpenSans-Light.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+a{
+    color: black;
+}
+.container{
+    max-width: 1640px;
+    margin: auto;
+}
+.header{
+    padding-top: 19px;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: white;
+}
+.header__container{
+    display: flex;
+    align-items: center;
+}
+.header__nav{
+    margin: auto;
+}
+.nav{
+    display: flex;
+    align-items: center;
+}
+.nav__item{
+    list-style-type: none;
+    margin-right: 94px;
+}
+.nav__item:last-child{
+    margin-right: 0;
+}
+#phone__number{
+    display: flex;
+}
+.phone{
+    margin-right: 12px;
+}
+.main__banner{
+    position: relative;
+    margin-bottom: 31px;
+}
+.banner__title{
+    font-family: 'RussoOne', sans-serif;
+    font-size: 64px;
+    position: absolute;
+    top: 81px;
+    left: 24px;
+    color: white;
+    max-width: 1276px;
+    font-weight: normal;
+}
+.main__content{
+    background-color: #F5F5F5;
+    padding-top: 25px;
+    padding-bottom: 53px;
+}
+.main__title{
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    font-family: 'RussoOne', sans-serif;
+    font-size: 24px;
+}
+.title__text{
+    color: #0E55A8;
+    font-size: 24px;
+}
+.services{
+    margin-top: 40px;
+    margin-bottom: 51px;
+}
+.services__cards{
+    display: flex;
+    gap: 30px;
+}
+.services__card{
+    position: relative;
+}
+.rect{
+    position: absolute;
+    right: 19px;
+    bottom: 19px;
+    background-color: rgba(14, 85, 168, 0.53);
+    width: 328px;
+    height: 105px;
+}
+.card__text{
+    color: white;
+}
+#first p{
+    margin-top: 15px;
+    margin-left: 41px;
+}
+#second p{
+    margin-top: 22px;
+    margin-left: 17px;
+}
+#third p{
+    margin-top: 31px;
+    margin-left: 82px;
+}
+.equipment{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 88px;
+}
+#eq_text1{
+    margin-top: 58px;
+    margin-bottom: 26px;
+}
+#eq_text2{
+    margin-bottom: 39px;
+}
+.content__list{
+    list-style-position: inside;
+    margin-bottom: 10px;
+}
+.equipment__cards{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 780px;
+    height: 426px;
+}
+.eq__card{
+    margin-right: 56px;
+    margin-bottom: 36px;
+}
+.eq__card:nth-child(even){
+    margin-right: 0;
+}
+.eq__card:nth-last-child(-n+2){
+    margin-bottom: 0;
+}
+.main__info{
+    margin-top: 43px;
+}
+.info__content{
+    display: flex;
+    gap: 30px;
+    margin-top: 49px;
+}
+.map{
+    margin-top: 0;
+}
+.wrapper{
+    display: flex;
+    width: 972px;
+    justify-content: space-between;
+}
+.info__content ul{
+    list-style-type: none;
+}
+.info__hours{
+    margin-top: 0;
+}
+.hours__item{
+    margin-bottom: 26px;
+}
+.hours__item:last-child{
+    margin-bottom: 0;
+}
+.info__address{
+    margin-top: 0;
+}
+.address_item{
+    margin-bottom: 24px;
+}
+.address_item:last-child{
+    margin-bottom: 0;
+}
+.footer{
+    margin-top: 102px;
+    padding-bottom: 26px;
+}
+.footer__text{
+    text-align: end;
+    font-size: 14px;
+    font-family: 'OpenSans-Light', sans-serif;
+}
+@media (max-width: 1024px){
+    .container{
+        max-width: 904px;
+    }
+    .banner__img{
+        max-width: 904px;
+        height: 410px;
+        object-fit: cover;
+    }
+    .header__nav{
+        margin-left: 64px;
+    }
+    .nav__item{
+        margin-right: 36px;
+    }
+    .banner__title{
+        font-size: 48px;
+    }
+    .services__card_img{
+        width: 442px;
+        height: 232px;
+        object-fit: cover;
+    }
+    .services__cards{
+        flex-wrap: wrap;
+        gap: 0;
+        justify-content: space-between;
+    }
+    #third{
+        margin-top: 35px;
+    }
+    #third p{
+        margin-left: 34px;
+    }
+    .rect{
+        width: 275px;
+    }
+    #first p{
+        max-width: 172px;
+    }
+    .equipment{
+        display: block;
+        margin-top: 81px;
+    }
+    .equipment__content{
+        margin-bottom: 29px;
+    }
+    .equipment__cards{
+        justify-content: space-between;
+        max-width: 904px;
+    }
+    .main__content{
+        padding-bottom: 37px;
+    }
+    .main__info{
+        margin-top: 24px;
+    }
+    .wrapper{
+        display: block;
+    }
+    .info__content{
+        gap: 96px;
+    }
+    .info__hours{
+        margin-bottom: 37px;
+    }
+    .footer{
+        margin-top: 75px;
+    }
+}
+@media (max-width: 428px) {
+    .container{
+        max-width: 388px;
+    }
+    .banner__img{
+        max-width: 388px;
+        height: 410px;
+        object-fit: cover;
+    }
+    .header__container{
+        justify-content: space-between;
+    }
+    .header__nav{
+        margin-right: 0;
+    }
+    .nav__item:nth-child(-n+3){
+        display: none;
+    }
+    .phone{
+        display: none;
+    }
+    .header{
+        position: static;
+    }
+    .banner__title{
+        font-size: 36px;
+        left: 33px;
+    }
+    .title__text{
+        display: none;
+    }
+    .main__content{
+        padding-top: 38px;
+        padding-bottom: 71px;
+    }
+    .services{
+        margin-top: 21px;
+        margin-bottom: 28px;
+    }
+    .services__card_img{
+        width: 388px;
+        height: 232px;
+        object-fit: cover;
+    }
+    .services__card{
+        margin-bottom: 42px;
+    }
+    #third{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .equipment{
+        margin-top: 56px;
+    }
+    .rect{
+        width: 240px;
+    }
+    #first p{
+        margin-left: 29px;
+    }
+    #eq_text1{
+        margin-top: 29px;
+    }
+    #eq_text2{
+        margin-bottom: 30px;
+    }
+    .eq__card{
+        width: 386px;
+        margin-right: 0;
+    }
+    .eq__card:nth-child(2n){
+        display: none;
+    }
+    .main__info{
+        margin-top: 33px;
+    }
+    .info__content{
+        margin-top: 25px;
+        display: block;
+    }
+    .wrapper{
+        margin-top: 26px;
+        width: 388px;
+    }
+    .info__hours{
+        margin-bottom: 17px;
+    }
+    .footer{
+        margin-top: 91px;
+        padding-bottom: 15px;
+    }
+    .footer__text{
+        text-align: center;
+        font-size: 12px;
+    }
+}
